@@ -60,7 +60,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {	
+h6 {
 	color:#93bdbc;
 	font-family: 'ostrich_sansbold','Helvetica Neue', Helvetica, sans-serif;
 	font-weight: normal;
@@ -85,7 +85,7 @@ header {
 }
 blockquote {
 	border-left: none;
-	padding: 4em 2em;	
+	padding: 4em 2em;
 	margin-bottom: 0;
 	text-align: left;
 }
@@ -104,11 +104,11 @@ blockquote.caption-2:before {
 .subline {
 	padding: 1em 0.5em 0;
 }
-.section-title-container {	
+.section-title-container {
 	text-align: center;
 	margin: 6em 0 2em;
 }
-.section-title {	
+.section-title {
 	border-bottom: 4px double #93bdbc;
 	display: inline-block;
 	text-align: center;
@@ -123,7 +123,7 @@ blockquote.caption-2:before {
 	font-size: 0.5em;
 }
 .hearts {
-	background:url(../img/icon-hearts.png) no-repeat center bottom;	
+	background:url(../img/icon-hearts.png) no-repeat center bottom;
 	display: block;
 	height: 2em;
 	position: relative;
@@ -168,8 +168,8 @@ blockquote.caption-2:before {
 .date-container, .subline, .side-nav {
 	color: #b6aea8;
 	font-family: 'Roboto Slab', serif;
-	font-weight:bold;	
-	text-transform: uppercase;	
+	font-weight:bold;
+	text-transform: uppercase;
 }
 .date-container .day-meta {
 	font-family: 'Playfair Display', serif;
@@ -217,7 +217,7 @@ div[id*="section-"] {
 	text-align: center;
 	padding: 4em;
 	vertical-align: middle;
-	width: 50%;	
+	width: 50%;
 }
 .block-logo:hover {
 	background-color: #FFF;
@@ -263,11 +263,11 @@ aside .postfix.button {
 }
 .side-nav {
 	background-color:#abd8df; /* fallback */
-	background: rgba(171, 216, 223, 0.9); 
+	background: rgba(171, 216, 223, 0.9);
 	margin: 0;
 	padding:0;
 }
-.side-nav li { 
+.side-nav li {
 	margin:0;
 }
 .side-nav li a {
@@ -277,7 +277,7 @@ aside .postfix.button {
 	padding: 1.25em;
 }
 .side-nav li.active a,
-.side-nav li a:hover {	
+.side-nav li a:hover {
 	background-color:#fff;
 	color:#abd8e0;
 }
@@ -285,12 +285,12 @@ aside .postfix.button {
 	margin: 0 auto;
 	width: 59%;
 }
-.shadow {	
+.shadow {
 	-webkit-box-shadow: 0 0 1.5em #6e6e6e;
 	   -moz-box-shadow: 0 0 1.5em #6e6e6e;
 			box-shadow: 0 0 1.5em #6e6e6e;
 }
-.logo {		
+.logo {
 	margin:5em auto;
 }
 .logo a {
@@ -319,9 +319,9 @@ button, .button {
 	text-transform: uppercase;
 	padding: 1.250em 1.5em;
 }
-button:hover, 
-button:focus, 
-.button:hover, 
+button:hover,
+button:focus,
+.button:hover,
 .button:focus {
 	background-color:#abd8df;
 }
@@ -352,7 +352,7 @@ input[type="url"],
 textarea {
 	background-color: #F5F5F6;
 	border: 1px solid #F5F5F6;
-	border-radius: 3px; 
+	border-radius: 3px;
 	height: 38px;
 	color: #818b92;
 	-webkit-font-smoothing: antialiased;
@@ -363,26 +363,26 @@ textarea {
 	   -moz-transition: .25s ease-in;
 		    transition: .25s ease-in;
 }
-input[type="text"]:focus, 
-input[type="password"]:focus, 
-input[type="date"]:focus, 
-input[type="datetime"]:focus, 
-input[type="datetime-local"]:focus, 
-input[type="month"]:focus, 
-input[type="week"]:focus, 
-input[type="email"]:focus, 
-input[type="number"]:focus, 
-input[type="search"]:focus, 
-input[type="tel"]:focus, 
-input[type="time"]:focus, 
-input[type="url"]:focus, 
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
 textarea:focus {
 	background-color: #FFF;
 	border:1px solid #abd8e0;
 	-webkit-box-shadow: none;
 	   -moz-box-shadow: none;
 		    box-shadow: none;
-} 
+}
 
 label {
 	text-align: left;
@@ -435,8 +435,8 @@ form.custom .dropdown {
 
 /*==== Error Handling ====*/
 
-[data-abide] .error small.error, 
-[data-abide] span.error, 
+[data-abide] .error small.error,
+[data-abide] span.error,
 [data-abide] small.error {
 	display: block;
 	padding: 0.875em 0.25em;
@@ -445,11 +445,11 @@ form.custom .dropdown {
 	font-size: 0.75em;
 	font-weight: normal;
 	background: #c60f13;
-	color: white; 
+	color: white;
 }
-[data-abide] span.error, 
+[data-abide] span.error,
 [data-abide] small.error {
-	display: none; 
+	display: none;
 }
 span.error, small.error {
 	display: block;
@@ -459,24 +459,24 @@ span.error, small.error {
 	font-size: 0.75em;
 	font-weight: bold;
 	background: #c60f13;
-	color: white; 
+	color: white;
 }
 .error input,
 .error textarea,
 .error select {
 	border-color: #80aca3;
 	background-color: rgba(128, 172, 163, 0.1);
-	margin-bottom: 0; 
+	margin-bottom: 0;
 }
 .error input:focus,
 .error textarea:focus,
 .error select:focus {
   	background: #fafafa;
-  	border-color: #999999; 
+  	border-color: #999999;
 }
 .error label,
 .error label.error {
-  	color: #c60f13; 
+  	color: #c60f13;
 }
 .error > small,
 .error small.error {
@@ -487,32 +487,32 @@ span.error, small.error {
 	font-size: 0.75em;
 	font-weight: bold;
 	background: #f1ca6b;
-	color: white; 
+	color: white;
 }
 .error span.error-message {
-	display: block; 
+	display: block;
 }
 input.error,
 textarea.error {
 	border-color: #f1ca6b;
 	background-color: rgba(198, 15, 19, 0.1);
-	margin-bottom: 0; 
+	margin-bottom: 0;
 }
 input.error:focus,
 textarea.error:focus {
 	background: #fafafa;
-	border-color: #999999; 
+	border-color: #999999;
 }
 .error select {
   	border-color: #f1ca6b;
-  	background-color: rgba(198, 15, 19, 0.1); 
+  	background-color: rgba(198, 15, 19, 0.1);
 }
 .error select:focus {
 	background: #fafafa;
-	border-color: #999999; 
+	border-color: #999999;
 }
 label.error {
-	color: #c60f13; 
+	color: #c60f13;
 }
 
 /*==== Notification Panel ====*/
@@ -548,7 +548,7 @@ label.error {
 	font-weight: 300;
 	letter-spacing: 3px;
 	opacity: 0;
-	margin: 0px;	
+	margin: 0px;
 	position: absolute;
 	top: 0px;
 	width: 100%;
@@ -598,7 +598,7 @@ label.error {
 /*-----------------------------------------------------------------------------------*/
 
 footer {
-	overflow: hidden;	
+	overflow: hidden;
 	text-transform: uppercase;
 	text-align: center;
 	padding: 2em;
@@ -624,6 +624,10 @@ footer a {
 	margin: 3em 0 2em;
 }
 .preloader {
-	background:url(../img/status.gif) no-repeat center center; 
+	background:url(../img/status.gif) no-repeat center center;
 	min-height:400px;
+}
+
+.rsvp {
+	display: none;
 }

@@ -19,8 +19,8 @@ $(document).ready(function() {
 
 	console.log(getUrlParams());
 
-	if (!urlParams.id){
-		$(".rsvp").hide();
+	if (urlParams.id){
+		$(".rsvp").show();
 	}
 
 

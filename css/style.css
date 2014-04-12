@@ -631,3 +631,18 @@ footer a {
 .rsvp {
 	display: none;
 }
+
+.schedule {
+	margin-top: 1rem;
+}
+.schedule th, .schedule td {
+	color:#93bdbc;
+	font-family: 'ostrich_sansbold','Helvetica Neue', Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+.schedule td {
+	width: 100%;
+}

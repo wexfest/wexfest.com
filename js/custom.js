@@ -17,10 +17,20 @@ $(document).ready(function() {
 		return urlParams;
 	}
 
-	console.log(getUrlParams());
-
 	if (urlParams.id){
-		$(".rsvp").show();
+		console.log(dpd.rsvps.get(urlParams.id, function(dude, error){
+			console.log(dude, error);
+			// invitedName
+			$(".invitedName").text(dude.name);
+			if (dude.guestAllowed){
+				$(".guestAllowed").show();
+			}
+			else{
+				$(".guestAllowed").hide();
+			}
+			$(".rsvp").show();
+		}));
+
 	}
 
 
@@ -49,21 +59,6 @@ $(document).ready(function() {
 	}
 
 	smoothScroll();
-
-	/*-----------------------------------------------------------------------------------*/
-	/*	Backstretch
-	/*  Thanks to: http://srobbin.com/jquery-plugins/backstretch/
-	/*-----------------------------------------------------------------------------------*/
-
-	function backStrech() {
-		$("aside").backstretch([
-			"img/placeholder-1.jpg",
-			"img/placeholder-2.jpg",
-
-			], {duration: 5000, fade: 1000});
-	}
-
-	backStrech();
 
 	/*-----------------------------------------------------------------------------------*/
 	/*	Flexslider

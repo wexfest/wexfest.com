@@ -75,7 +75,7 @@
           </h2>
         </header>
 
-        <p class="subline">Invite You to Wexfest!</p>
+        <p class="rsvp subline">Invite You, <span class="invitedName"></span> <span class="guestAllowed">and guest </span> to Wexfest!</p>
         <img src="img/hero-unit.jpg" alt="Placeholder" class="hero-unit" />
         <div class="row divider date-section">
           <div class="large-6 small-12 columns">
@@ -315,7 +315,7 @@
         </div>
         <div class="small-12 large-10 large-centered columns">
           <form data-abide method="POST" action="index.html#" class="rsvp-form custom" id="js-form">
-            <fieldset class="rsvp-details">
+            <fieldset class="rsvp-basics">
               <!-- Displays a global alert if required fields are missing -->
               <div class="js-display"></div>
               <legend>
@@ -323,48 +323,83 @@
               </legend>
               <div class="row">
                 <div class="large-6 columns">
-                  <label for="firstname">First Name</label>
-                  <input type="text" class="input-field" id="firstname" name="firstname" value="" placeholder="Your first name is required" required>
-                  <small class="error">First Name is required.</small>
+                  <label for="name">Name</label>
+                  <input type="text" class="input-field" id="name" name="name" value="" placeholder="Your name is required" required>
+                  <small class="error">Name is required.</small>
                 </div>
-                <div class="large-6 columns">
-                  <label for="lastname">Last Name</label>
-                  <input type="text" class="input-field" id="lastname" name="lastname" value="" placeholder="Your last name is required" required>
-                  <small class="error">Last Name is required.</small>
-                </div>
-              </div>
-              <div class="row">
                 <div class="large-6 columns">
                   <label for="email">Email</label>
                   <input type="email" class="input-field" id="email" name="email" value="" placeholder="name@yourdomain.com" required>
                   <small class="error">Valid Email is required.</small>
                 </div>
-                <div class="large-6 columns">
-                  <label for="phone">Phone</label>
-                  <input type="tel" class="input-field" id="phone" name="phone" value="" placeholder="A phone number is optional">
-                </div>
               </div>
             </fieldset>
             <fieldset class="rsvp-attendance">
               <legend>Will you be attending?</legend>
-              <div class="large-6 columns">
-                <label for="radio1">
-                  <input name="radio" type="radio" id="radio1" style="display:none;" value="Accepts with Pleasure!" required>
-                  <span class="custom radio accept"></span>
-                  <span class="radio-label">Accept with Pleasure!</span>
-                </label>
+              <div class="row">
+                <div class="large-6 columns">
+                  <label for="radio1">
+                    <input name="radio" type="radio" id="radio1" style="display:none;" value="accept" required>
+                    <span class="custom radio accept"></span>
+                    <span class="radio-label">Enthusiastically Attend</span>
+                  </label>
+                </div>
+                <div class="large-6 columns">
+                  <label for="radio2">
+                    <input name="radio" type="radio" id="radio2" style="display:none;" value="decline" required>
+                    <span class="custom radio decline"></span>
+                    <span class="radio-label">Regretfully Decline</span>
+                  </label>
+                </div>
               </div>
-              <div class="large-6 columns">
-                <label for="radio2">
-                  <input name="radio" type="radio" id="radio2" style="display:none;" value="Declines with Regret." required>
-                  <span class="custom radio decline"></span>
-                  <span class="radio-label">Decline with Regret.</span>
-                </label>
+              <div class="row">
+                <div class="large-6 columns">
+                  <label for="radio3">
+                    <input name="radio" type="radio" id="radio3" style="display:none;" value="accept" required>
+                    <span class="custom radio accept"></span>
+                    <span class="radio-label">Resentfully Attend</span>
+                  </label>
+                </div>
+                <div class="large-6 columns">
+                  <label for="radio4">
+                    <input name="radio" type="radio" id="radio4" style="display:none;" value="decline" required>
+                    <span class="custom radio decline"></span>
+                    <span class="radio-label">Enthusiastically Decline</span>
+                  </label>
+                </div>
               </div>
             </fieldset>
+            <fieldset class="rsvp-details">
+              <!-- Displays a global alert if required fields are missing -->
+              <div class="js-display"></div>
+              <div class="row">
+                <div class="large-6 columns">
+                  <label for="phone">Phone</label>
+                  <input type="tel" class="input-field" id="phone" name="phone" value="" placeholder="A phone number is optional">
+                </div>
+                <div class="large-6 columns">
+                  <label for="accomodation">Would you like accomodation details for Revelstoke?</label>
+                  <input type="checkbox" class="" id="accomodation" name="phone" value="" placeholder="A phone number is optional">
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label for="allergies">Any allergies?</label>
+                  <input type="text" class="input-field" id="allergies" name="allergies" value="" placeholder="Please also indicate how severe">
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label for="music">What song will get you dancing?</label>
+                  <input type="text" class="input-field" id="music" name="music" value="" placeholder="">
+                </div>
+              </div>
+            </fieldset>
+
             <button type="submit" class="button radius" id="js-submit-btn">
               <i class="fa fa-envelope"></i>
-              <span class="btn-label">Send</span>
+              <span class="btn-label declineResponse">Send</span>
+              <span class="btn-label acceptResponse">Send</span>
             </button>
           </form>
 
@@ -389,13 +424,17 @@
                 <li>
                   <img src="img/mcneil.png" alt="John McNeil, everyone!" />
                   <p class="flex-caption">
-
                   </p>
-                  <p>
-
-                  </p>
-                  <p>
-
+                </li>
+                <li>
+                  <img src="img/lammers.png" alt="TV's Joe Lammers, everyone!" />
+                  <blockquote>
+                    "On the icy catwalks of British Columbia's pists, high adrenaline combines with high fashion to create a look that's positively unparalleled."
+                  </blockquote>
+                  <p class="flex-caption">
+                    I first met Joe when we moved onto the same street in Revelstoke in 2008. In
+                    my quest to become proficient in the mountains, Joe has always been a gracious,
+                    patient and encouraging mentor. Now that we've moved back to Moss st, Joe is within tin-can-and-string range. Bottles of scotch, great wine and better company seem to be a much more frequent occurance.
                   </p>
                 </li>
                 <li>
@@ -407,7 +446,7 @@
                 <li>
                   <img src="img/gow.png" alt="Ryan Gow, everyone!" />
                   <p class="flex-caption">
-                    Actually Odd Future master cleanse, ugh typewriter trust fund small batch normcore bespoke stumptown cornhole Tonx Pitchfork Blue Bottle retro. Whatever dreamcatcher shabby chic direct trade Pitchfork, pork belly jean shorts twee gastropub +1 you probably haven't heard of them. Freegan semiotics retro Tonx High Life single-origin coffee. Trust fund American Apparel aesthetic, Intelligentsia bitters master cleanse cred swag sustainable. Thundercats +1 cray, Shoreditch seitan Banksy mixtape raw denim locavore letterpress narwhal. Stumptown ethical lomo, plaid craft beer butcher pour-over Portland American Apparel quinoa cardigan post-ironic wolf synth pickled. Thundercats flexitarian pickled, drinking vinegar Truffaut cornhole irony VHS gluten-free iPhone PBR&B DIY fingerstache Etsy.
+                    Actually Odd Future master cleanse, ugh typewriter trust fund small batch normcore bespoke stumptown cornhole Tonx Pitchfork Blue Bottle retro. Whatever dreamcatcher shabby chic direct trade Pitchfork, pork belly jean shorts twee gastropub +1 you probably haven't heard of them. Freegan semiotics retro Tonx High Life single-origin coffee. Trust fund American Apparel aesthetic, Intelligentsia bitters master cleanse cred swag sustainable. Thundercats +1 cray, Shoreditch seitan Banksy mixtape raw denim locavore letterpress narwhal. Stumptown ethical lomo, plaid craft beer butcher pour-over Portland American Apparel quinoa cardigan post-ironic wolf synth pickled. Thundercats flexitarian pickled, drinking vinegar Truffaut cornhole irony VHS gluten-free iPhone PBR&amp;B DIY fingerstache Etsy.
                   </p>
                 </li>
                 <li>
@@ -507,6 +546,7 @@
 
 
   <script src="js/vendor/jquery.min.js"></script>
+  <script src="http://localhost:2403/dpd.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
   <script src="js/foundation.min.js"></script>
   <script src="js/foundation/foundation.abide.js"></script>

@@ -37,7 +37,6 @@
 body {
 	color:#838383;
 	font-family:'Roboto Slab', serif;
-	text-align: center;
 }
 a {
 	color:#93bdbc;
@@ -52,6 +51,12 @@ img {
 	width: 100%;
 	height: auto;
 }
+p {
+	text-align: left;
+}
+ul {
+	list-style-type: none;
+	}
 
 /*==== Headings ====*/
 

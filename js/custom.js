@@ -18,19 +18,7 @@ $(document).ready(function() {
 	}
 
 	if (urlParams.id){
-		console.log(dpd.rsvps.get(urlParams.id, function(dude, error){
-			console.log(dude, error);
-			// invitedName
-			$(".invitedName").text(dude.name);
-			if (dude.guestAllowed){
-				$(".guestAllowed").show();
-			}
-			else{
-				$(".guestAllowed").hide();
-			}
-			$(".rsvp").show();
-		}));
-
+		$(".rsvp").show();
 	}
 
 

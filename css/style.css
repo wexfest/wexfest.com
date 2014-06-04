@@ -56,7 +56,13 @@ p {
 }
 ul {
 	list-style-type: none;
-	}
+}
+.eof {
+	padding-bottom: 20em;
+}
+.standalone {
+	text-align: center
+}
 
 /*==== Headings ====*/
 
@@ -270,7 +276,8 @@ aside .postfix.button {
 	background-color:#abd8df; /* fallback */
 	background: rgba(171, 216, 223, 0.9);
 	margin: 0;
-	padding:0;
+	padding: 0;
+	text-align: center;
 }
 .side-nav li {
 	margin:0;
@@ -297,6 +304,7 @@ aside .postfix.button {
 }
 .logo {
 	margin:5em auto;
+	text-align: center;
 }
 .logo a {
 	background-color: #93bdbc; /* fallback */
@@ -634,7 +642,7 @@ footer a {
 }
 
 .rsvp {
-	display: none;
+	/*display: none;*/
 }
 
 .schedule {

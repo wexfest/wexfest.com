@@ -35,7 +35,6 @@
         <li><a href="index.html#section-0"><i class="fa fa-arrow-up"></i></a></li>
         <li><a href="index.html#section-1">Our Story</a></li>
         <li><a href="index.html#section-events">Events</a></li>
-        <li class="rsvp"><a href="index.html#section-rsvp">RSVP</a></li>
         <li><a href="index.html#section-accommodation">Accommodation</a></li>
         <li><a href="index.html#section-groomsmen">Groomsmen</a></li>
         <li><a href="index.html#section-bridesmaids">Bridesmaids</a></li>
@@ -56,7 +55,6 @@
             <!-- <li><a href="index.html#section-2">Photos</a></li> -->
             <li><a href="index.html#section-events">Events</a></li>
             <!-- <li><a href="index.html#section-5">Gifts</a></li> -->
-            <li class="rsvp"><a href="index.html#section-rsvp">RSVP</a></li>
             <li><a href="index.html#section-accommodation">Accommodation</a></li>
             <li><a href="index.html#section-groomsmen">Groomsmen</a></li>
             <li><a href="index.html#section-bridesmaids">Bridesmaids</a></li>
@@ -76,7 +74,7 @@
           </h2>
         </header>
 
-        <p class="rsvp subline">Invite You, <span class="invitedName"></span> <span class="guestAllowed">and guest </span> to Wexfest!</p>
+        <p class="standalone rsvp subline">Are hosting the first annual Wexfest! &mdash; By Invite only.</p>
         <img src="img/hero-unit.jpg" alt="Placeholder" class="hero-unit" />
         <div class="row divider date-section">
           <div class="large-6 small-12 columns">
@@ -87,8 +85,8 @@
           </div>
           <div class="large-6 small-12 columns rsvp">
             <div class="date-container col-2">
-              <span class="day-time">Late Afternoon</span>
-              <span class="day-location accent">Shuttle from Grizzly Plaza</span>
+              <span class="day-time">14:00, 14:30 and 15:00</span>
+              <span class="day-location accent">Shuttles from Grizzly Plaza</span>
               <span class="day-address">Revelstoke, BC</span>
               <span class="day-meta">dinner + dancing to follow</span>
             </div>
@@ -97,8 +95,8 @@
       </div><!-- END #section-0 -->
 
       <div class="callout rsvp">
-        <a href="index.html#section-rsvp" class="button radius js-scroll">
-          <i class="fa fa-envelope"></i> <span class="btn-label">Click here to RSVP today</span>
+        <a href="#" class="button radius js-scroll">
+          <i class="fa fa-envelope"></i> <span class="btn-label">Directions from Revelstoke to Follow</span>
         </a>
       </div><!-- END .callout -->
 
@@ -278,114 +276,18 @@
                 folks the option of dancing all night and not worrying about
                 transportation back into Revelstoke.
               </p>
+              <p>
+                For any questions please email:
+                <a href="mailto:us@wexfest.com" title="E-mail Us">
+                  us@wexfest.com
+                </a>
+              </p>
+
             </div>
           </div>
         </div>
       </div>
-      <div id="section-rsvp" class="rsvp js-form">
-        <div class="section-title-container">
-          <h2 class="section-title">RSVP</h2>
-          <span class="hearts"></span>
-        </div>
-        <div class="small-12 large-10 large-centered columns">
-          <form data-abide method="POST" action="index.html#" class="rsvp-form custom" id="js-form">
-            <fieldset class="rsvp-basics">
-              <!-- Displays a global alert if required fields are missing -->
-              <div class="js-display"></div>
-              <legend>
-                Kindly respond by <strong>June 15, 2014</strong>. We look forward to celebrating with you!
-              </legend>
-              <div class="row">
-                <div class="large-6 columns">
-                  <label for="name">Name</label>
-                  <input type="text" class="input-field" id="name" name="name" value="" placeholder="Your name is required" required>
-                  <small class="error">Name is required.</small>
-                </div>
-                <div class="large-6 columns">
-                  <label for="email">Email</label>
-                  <input type="email" class="input-field" id="email" name="email" value="" placeholder="name@yourdomain.com" required>
-                  <small class="error">Valid Email is required.</small>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="rsvp-attendance">
-              <legend>Will you be attending?</legend>
-              <div class="row">
-                <div class="large-6 columns">
-                  <label for="radio1">
-                    <input name="radio" type="radio" id="radio1" style="display:none;" value="accept" required>
-                    <span class="custom radio accept"></span>
-                    <span class="radio-label">Enthusiastically Attend</span>
-                  </label>
-                </div>
-                <div class="large-6 columns">
-                  <label for="radio2">
-                    <input name="radio" type="radio" id="radio2" style="display:none;" value="decline" required>
-                    <span class="custom radio decline"></span>
-                    <span class="radio-label">Regretfully Decline</span>
-                  </label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-6 columns">
-                  <label for="radio3">
-                    <input name="radio" type="radio" id="radio3" style="display:none;" value="accept" required>
-                    <span class="custom radio accept"></span>
-                    <span class="radio-label">Resentfully Attend</span>
-                  </label>
-                </div>
-                <div class="large-6 columns">
-                  <label for="radio4">
-                    <input name="radio" type="radio" id="radio4" style="display:none;" value="decline" required>
-                    <span class="custom radio decline"></span>
-                    <span class="radio-label">Enthusiastically Decline</span>
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="rsvp-details">
-              <!-- Displays a global alert if required fields are missing -->
-              <div class="js-display"></div>
-              <div class="row">
-                <div class="large-6 columns">
-                  <label for="phone">Phone</label>
-                  <input type="tel" class="input-field" id="phone" name="phone" value="" placeholder="A phone number is optional">
-                </div>
-                <div class="large-6 columns">
-                  <label for="accommodation">Would you like accommodation details for Revelstoke?</label>
-                  <input type="checkbox" class="" id="accommodation" name="phone" value="" placeholder="A phone number is optional">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label for="allergies">Any allergies?</label>
-                  <input type="text" class="input-field" id="allergies" name="allergies" value="" placeholder="Please also indicate how severe">
-                </div>
-              </div>
-              <div class="row">
-                <div class="large-12 columns">
-                  <label for="music">What song will get you dancing?</label>
-                  <input type="text" class="input-field" id="music" name="music" value="" placeholder="">
-                </div>
-              </div>
-            </fieldset>
 
-            <button type="submit" class="button radius" id="js-submit-btn">
-              <i class="fa fa-envelope"></i>
-              <span class="btn-label declineResponse">Send</span>
-              <span class="btn-label acceptResponse">Send</span>
-            </button>
-          </form>
-
-          <p>
-            For any questions please email us:
-            <a href="mailto:us@wexfest.com" title="E-mail Us">
-              info@yourdomain.com
-            </a>
-          </p>
-        </div><!-- END .large-8 -->
-        <div id="map-canvas" style="width:100%; height:500px;"></div>
-      </div><!-- END .row -->
       <div id="section-groomsmen">
         <div class="row">
           <div class="section-title-container">
@@ -399,7 +301,17 @@
                   <img src="img/mcneil.png" alt="John McNeil, everyone!" />
                   <h3>John McNeil</h3>
                   <p class="flex-caption">
+                    John and I met in the 90s and bonded over our mutual love
+                    of mischief and distrust of anyone over the age of 16.
+                    Together, we have shared some of my most memorable, least
+                    sharable experiences. &mdash; Luckily most before the advent
+                    of facebook.
                   </p>
+                  <p>
+                    We've lived together and spent a lot of time apart. No matter
+                    what the ratio, John and I always know we can count on each other.
+                  </p>
+                  <p class="flex-caption">&mdash; Simon</p>
                 </li>
                 <li>
                   <img src="img/lammers.png" alt="TV's Joe Lammers, everyone!" />
@@ -415,9 +327,10 @@
                     the mountains, Joe has always been a gracious, patient
                     and encouraging mentor. Now that we've moved back to
                     Moss Street, Joe is within tin-can-and-string range.
-                    Bottles of scotch, great wine and better company seem
-                    to be a much more frequent occurance.
+                    Bottles of scotch, great wine and better company are
+                    regular fare.
                   </p>
+                  <p class="flex-caption">&mdash; Simon</p>
                 </li>
                 <li>
                   <img src="img/geidt.png" alt="Reilly Geidt, everyone!" />
@@ -444,13 +357,13 @@
                     with - everything from politics to mountain bikes, economics
                     to music.
                   </p>
-                  <p>
+                  <p class="flex-caption">
                     Mike was their roommate through the brain-storming
                     and inception of his food truck business "The Taco Club,"
                     so they have also spent many nights in the hot tub discussing the
                     finer points of hot peppers.
                   </p>
-                  <p>
+                  <p class="flex-caption">
                     Mike is a newly-minted dad. Give baby Kaia a high five
                     when you see her at the wedding!
                   </p>
@@ -459,7 +372,7 @@
                   <img src="img/beale.png" alt="Sean Beale, everyone!" />
                   <h3>Sean Beale</h3>
                   <p class="flex-caption">
-                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
                   </p>
                 </li>
               </ul>
@@ -651,7 +564,7 @@
           </div>
         </div>
       </div>
-      <div id="section-contact">
+      <div id="section-contact" class="eof">
         <div class="row">
           <div class="section-title-container">
             <h2 class="section-title">Contact Us</h2>
@@ -662,18 +575,23 @@
               <p>
                 If you've got any questions or comments, please contact us:
               </p>
-              <p>Simon Wex / 250-200-1234 (yes, seriously!) / <a href="mailto:simon@simonwex.com">simon@simonwex.com</a>
-                </p>
               <p>
-              Karilyn Kempton / 250-814-8478 / <a href="mailto:karilyn.kempton@gmail.com">karilyn.kempton@gmail.com</a>
+                Simon Wex<br>
+                <a href="wtai://wp/mc;12502001234">+1 (250) 200-1234</a><br>
+                <a href="mailto:simon@simonwex.com">simon@simonwex.com</a>
               </p>
-              <p>Want to reach us both? Email <a href="mailto:us@wexfest.com">us@wexfest.com</a>.
-                </p>
+              <p>
+                Karilyn Kempton<br>
+                <a href="wtai://wp/mc;12508148478">+1 (250) 814-8478</a><br>
+                <a href="mailto:karilyn.kempton@gmail.com">karilyn.kempton@gmail.com</a>
+              </p>
+              <p>
+                Want to reach us both? Email <a href="mailto:us@wexfest.com">us@wexfest.com</a>.
+              </p>
               </div>
             </div>
           </div>
         </div>
-
     </div>
   </div>
 

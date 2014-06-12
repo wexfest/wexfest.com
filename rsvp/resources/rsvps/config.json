@@ -49,12 +49,12 @@
 			"id": "likelyCamping",
 			"order": 5
 		},
-		"needAccomodation": {
-			"name": "needAccomodation",
+		"needsAccomodation": {
+			"name": "needsAccomodation",
 			"type": "boolean",
 			"typeLabel": "boolean",
 			"required": false,
-			"id": "needAccomodation",
+			"id": "needsAccomodation",
 			"order": 6
 		},
 		"guestAllowed": {
